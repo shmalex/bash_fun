@@ -36,5 +36,15 @@ List of files and entries. List of preccess with specific values in environment 
 
 # Network
 
-List of processes that use port 80
+List of processes that use port 443
 `lsof -i:443`
+
+# Install SSH certificate
+
+The first step is to create a key pair on the client machine (usually your computer):
+`ssh-keygen`
+
+Copy the Public Key to CentOS Server
+`ssh-copy-id username@remote_host`
+
+done
